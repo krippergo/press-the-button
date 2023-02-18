@@ -25,7 +25,7 @@ function loading() {
 }
 
 function animation() {
-	img.style.filter = `blur(70px)`;
+	img.style.filter = `blur(50px)`;
 	setTimeout(nextAnimation, 700);
 }
 
