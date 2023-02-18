@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'MainFont';
+    src: url('../fonts/font.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, p {
+	margin: 0;
+	background-color: rgb(255, 251, 235);
+}
+
+* {
+	font-family: MainFont;
+}
+
+.title {
+	font-size: 36px;
+	margin-left: 20px;
+}
+
+.addressee-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: end;
+}
+
+.for-z {
+	z-index: 1;
+}
+
+.addressee {
+	width: fit-content;
+}
+
+.hearts {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.heart-one {
+	transition: all 1s;
+	transform: rotate(20deg);
+	width: 40px;
+}
+
+.heart-two {
+	transition: all 1s;
+	transform: rotate(-10deg);
+	width: 40px;
+}
+
+.heart-three {
+	transition: all 1s;
+	width: 40px;
+}
+
+.one {
+	height: 104px;
+	display: flex;
+	width: 40px;
+	align-items: end;
+}
+
+.two {
+	display: flex;
+	width: 40px;
+	align-items: start;
+	height: 104px;
+}
+
+.three {
+	display: flex;
+	width: 40px;
+	align-items: center;
+	height: 104px;
+}
+
+.main-button-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content {
+	height: 66vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-text {
+	max-width: 500px;
+	font-size: 20px;
+	padding: 0px 10px;
+}
+
+.content-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.img-load {
+	position: absolute;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	width: 260px;
+	height: 260px;
+	transition: all 0.7s;
+	filter: blur(1000px);
+	z-index: 0;
+}
+
+@media (max-width: 320px) {
+	.title {
+		font-size: 28px;
+	}
+
+	.main-text {
+		font-size: 18px;
+	}
+
+	.heart-one {
+		width: 34px;
+	}
+	
+	.heart-two {
+		width: 34px;
+	}
+	
+	.heart-three {
+		width: 34px;
+	}
+	
+	.one {
+		width: 34px;
+	}
+	
+	.two {
+		width: 34px;
+	}
+	
+	.three {
+		width: 34px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+	.title {
+		font-size: 32px;
+	}
+}
+
+.none {
+	display: none;
+}
